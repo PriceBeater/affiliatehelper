@@ -1,0 +1,15 @@
+{
+    "name": "affiliatehelper",
+    "description": "Affiliate url generator",
+    "version": "0.0.1",
+    "homepage": "https://bitbucket.org/PriceBeater/urlutility",
+    "repository": {
+        "type": "git",
+        "url": "git@bitbucket.org:PriceBeater/urlutility.git"
+    },
+
+  "dependencies" : {
+    "MD5"   :  "*"
+  },
+  "main": "./urlutility.js"
+}
