@@ -9,7 +9,7 @@
     },
 
   "dependencies" : {
-    "MD5"   :  "*"
+    "request"   :  "*"
   },
-  "main": "./urlutility.js"
+  "main": "./src/index.js"
 }
