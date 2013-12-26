@@ -5,7 +5,10 @@ var affiliatehelper= function() {
   var me={};
 
   me.linksynergy_LinkGenerator=function(params,callback){
-    var url="http://getdeeplink.linksynergy.com/createcustomlink.shtml?"+querystring.stringify(params);
+    var murl=params["murl"];
+    delete params["murl"];
+
+    var url="http://getdeeplink.linksynergy.com/createcustomlink.shtml?"+querystring.stringify(params)+"&murl="+murl;
     request(
     {
           url:url,
