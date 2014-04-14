@@ -1,6 +1,6 @@
 var a=require("./src/index.js");
 
-var params={token:"00b870a0fb2c9c9da2e18bef51c3fe0824aacb1911c06de4b1b6b10ba1a8790f",
+var params={token:"YOUR_TOKEN_HERE",
 mid:"14029",
 murl:"http://www.tigerdirect.ca/applications/searchtools/item-details.asp?EdpNo=8516565"
 }
