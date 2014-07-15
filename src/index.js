@@ -34,14 +34,21 @@ var affiliatehelper= function() {
     var murl=params["murl"];
     var domain_idx=Math.floor(Math.random()*cj_domains.length)
     var afflink="http://"+cj_domains[domain_idx]+"/click-"+params["pid"]+"-"+params["aid"]+"?url="+encodeURIComponent(murl);
-    callback(null,afflink);
+    if(callback)
+      callback(null,afflink);
+    else
+      return afflink;
   };
 
 
   function _getlink(provider,name,params,callback){
     var funcname=provider+"_"+name;
     if(me[funcname]){
-      me[funcname](params,callback);
+      if(callback){
+        me[funcname](params,callback);
+      }else{
+        return me[funcname](params);
+      }
     }else{
       callback(null,"");
     }

@@ -21,3 +21,7 @@ a.GetLink("cj","LinkGenerator", params,function(err,link){
   console.log(link);
 });
 
+
+var result=a.GetLink("cj","LinkGenerator", params);
+console.log(result);
+
